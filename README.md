@@ -1,117 +1,91 @@
-# Intelligent Research Paper Summarizer with Novelty Detection
+# Semiconductor Manufacturing Sensor Data Analysis
 
 ## 📌 Project Overview
-The **Intelligent Research Paper Summarizer with Novelty Detection** is an NLP-based capstone project designed to assist researchers, students, and academicians in quickly understanding research papers and evaluating their originality.
+The **Semiconductor Manufacturing Sensor Data Analysis** project focuses on analyzing sensor data collected during semiconductor manufacturing processes to identify patterns, anomalies, and factors affecting production quality.
 
-The system automatically extracts text from research papers, generates concise summaries using transformer models, and detects the novelty of a paper by comparing it with related research from trusted academic sources.
+This project demonstrates the application of **data analysis and machine learning techniques** to industrial sensor data, aiming to improve yield, detect faults early, and support data-driven decision-making in manufacturing environments.
 
 ---
 
 ## 🎯 Objectives
-- Automatically extract text from research papers (PDF/DOCX)
-- Generate meaningful summaries using NLP transformer models
-- Retrieve related research papers from online sources
-- Measure semantic similarity and compute novelty score
-- Highlight novel concepts and contributions
+- Analyze large-scale sensor data from semiconductor manufacturing
+- Identify variations and anomalies in sensor readings
+- Perform data preprocessing and exploratory data analysis (EDA)
+- Understand relationships between sensor parameters and manufacturing outcomes
+- Gain insights that can help improve process efficiency and quality control
 
 ---
 
-## 🧠 Key Features
-- 📄 Upload research papers (PDF/DOCX)
-- ✂️ Automatic text preprocessing and cleaning
-- 📝 Transformer-based summarization
-- 🔍 Semantic similarity comparison
-- 📊 Novelty score calculation
-- 🌐 Web-based interface using Flask
-
----
-
-## 🔍 Data Sources
-The system fetches related research papers from:
-- Semantic Scholar
-- arXiv
-- OpenAlex
-
-Each source is assigned a credibility weight to improve novelty scoring accuracy.
+## 📂 Dataset Description
+- The dataset consists of **multiple sensor readings** collected from semiconductor fabrication equipment.
+- Each row represents a manufacturing instance.
+- Columns represent different sensor measurements and process parameters.
+- The data may include missing values and noise, requiring preprocessing.
 
 ---
 
 ## 🧠 Methodology
-1. User uploads a research paper
-2. Text is extracted and preprocessed
-3. Summary is generated using transformer models
-4. Related papers are fetched using APIs
-5. Sentence embeddings are computed
-6. Semantic similarity is calculated
-7. Novelty score is generated and displayed
+1. Load and inspect the sensor dataset
+2. Handle missing values and perform data cleaning
+3. Normalize and preprocess sensor features
+4. Perform exploratory data analysis (EDA)
+5. Visualize sensor trends and distributions
+6. Identify correlations and potential anomalies
+7. Interpret results for manufacturing insights
 
 ---
 
 ## 🛠️ Technologies Used
 - **Programming Language:** Python
-- **Web Framework:** Flask
-- **NLP Libraries:**
-  - Transformers
-  - Sentence-Transformers
-  - NLTK
+- **Libraries:**
+  - Pandas
+  - NumPy
+  - Matplotlib
+  - Seaborn
   - Scikit-learn
-- **Other Tools:**
-  - PDFPlumber
-  - BeautifulSoup
-  - ThreadPoolExecutor
 - **Environment:** Jupyter Notebook
 
 ---
 
-## 📂 Project Structure
-```
-Capestone2.ipynb
-app.py
-templates/
-static/
-.env
-requirements.txt
-```
+## 📊 Analysis & Results
+- Statistical summary of sensor measurements
+- Visualization of sensor distributions
+- Correlation analysis between sensor parameters
+- Detection of abnormal sensor behavior
+- Insights into key factors influencing manufacturing performance
 
 ---
 
 ## 🚀 How to Run the Project
-1. Install required dependencies:
+1. Install the required libraries:
    ```bash
-   pip install -r requirements.txt
+   pip install pandas numpy matplotlib seaborn scikit-learn
    ```
-2. Run the Flask application:
+2. Open Jupyter Notebook:
    ```bash
-   python app.py
+   jupyter notebook
    ```
-3. Open browser and navigate to:
+3. Run the notebook:
    ```
-   http://127.0.0.1:5000/
+   Semiconductor Manufacturing Sensor Data Analysis.ipynb
    ```
-
----
-
-## 📊 Output
-- Research paper summary
-- Similar research papers list
-- Novelty percentage score
-- Highlighted novel terms
 
 ---
 
 ## 📌 Applications
-- Academic research assistance
-- Literature review automation
-- Research originality checking
-- University and institutional research support
+- Semiconductor manufacturing process monitoring
+- Fault detection and quality control
+- Industrial IoT (IIoT) analytics
+- Predictive maintenance
+- Data-driven manufacturing optimization
 
 ---
 
 ## ✨ Future Enhancements
-- Citation-level novelty detection
-- Plagiarism-aware novelty scoring
-- Interactive dashboards
-- Multi-language research paper support
+- Apply machine learning models for fault prediction
+- Implement real-time sensor data analysis
+- Build dashboards for live monitoring
+- Integrate anomaly detection algorithms
 
 ---
 
@@ -121,4 +95,4 @@ requirements.txt
 ---
 
 ## 📄 License
-This project is developed for academic and educational purposes only.
+This project is developed strictly for educational and academic purposes.
